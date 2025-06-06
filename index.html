@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raghavender's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,102 +13,164 @@
 <nav class="navbar">
     <ul class="link-group">
         <li class="link active"><a href="#">Home</a></li>
-        <li class="link"><a href="#projects">Projects</a></li>
-        <li class="link"><a href="#about">About</a></li>
-        <li class="link"><a href="#contact">Contact</a></li>
+        <li class="link"><a href="#">Projects</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Contact</a></li>
     </ul>
 </nav>
 
 <!-- Home Section -->
-<section class="home-section active" id="home">
-    <h1 class="hero-heading">Hello, I'm <span>Raghavender Reddy</span></h1>
-    <p class="hero-subheading">A passionate developer driven by curiosity and creativity</p>
-    <img src="img/home.png" class="home-img" alt="Raghavender Reddy">
+<section class="home-section active">
+    <h1 class="hero-heading">Hello, I am <br> <span>Raghavender Reddy</span></h1>
+    <img src="img/home.png" class="home-img" alt="Portfolio banner image">
 </section>
 
 <!-- Projects Section -->
-<section class="project-section" id="projects">
-    <h1 class="project-heading">My Projects</h1>
+<section class="project-section">
+    <h1 class="project-heading">Some of My Projects</h1>
     <div class="project-container">
-
-        <!-- Sample Project Card -->
         <div class="project-card">
             <div class="project-img-container">
-                <img src="img/project-1.png" class="project-img" alt="Project Image">
+                <img src="img/project-1.png" class="project-img" alt="Alcohol Detection System">
                 <div class="overlay">
-                    <h3>View Details</h3>
+                    <h3>Edit</h3>
                 </div>
             </div>
             <div class="project-content">
                 <h1 class="project-title">Alcohol Detection System</h1>
-                <p class="project-description">A smart system to detect alcohol levels and enhance vehicle safety.</p>
                 <div class="project-btn-grp">
-                    <a href="#" class="project-btn github">GitHub Repo</a>
-                    <a href="#" class="project-btn live">See Live</a>
+                    <button class="project-btn github">GitHub Repo</button>
+                    <button class="project-btn live">See Live</button>
                 </div>
             </div>
         </div>
 
-        <!-- Duplicate and customize the above card for more projects -->
+        <div class="project-card">
+            <div class="project-img-container">
+                <img src="img/project-1.png" class="project-img" alt="Portfolio Website">
+                <div class="overlay">
+                    <h3>Edit</h3>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">Portfolio Website</h1>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">GitHub Repo</button>
+                    <button class="project-btn live">See Live</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Project Card Example -->
+        <div class="project-card">
+            <div class="project-img-container">
+                <img src="img/project-2.png" class="project-img" alt="Smart Home System">
+                <div class="overlay">
+                    <h3>Edit</h3>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">Smart Home System</h1>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">GitHub Repo</button>
+                    <button class="project-btn live">See Live</button>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
 
 <!-- About Section -->
-<section class="about-section" id="about">
+<section class="about-section">
     <div class="about">
         <div class="about-img-container">
-            <img src="img/Raghavender_Reddy_resume-1.png" class="about-img" alt="Raghavender">
-            <a href="resume.pdf" class="download-cv-btn" download>Download CV</a>
+            <img src="img/Raghavender_Reddy_resume-1.png" class="about-img" alt="Profile image">
+            <button class="download-cv-btn">Download CV</button>
         </div>
-        <div class="about-info">
-            <p>
-                I'm a Computer Science student focused on building real-world applications using IoT and Web technologies. My projects reflect my enthusiasm for continuous learning and innovation.
-            </p>
-        </div>
+        <p class="about-info">
+            I am a passionate Computer Science student specializing in IoT and Full Stack Web Development. I enjoy creating impactful solutions and continuously learning emerging technologies.
+        </p>
     </div>
 </section>
 
 <!-- Skills Section -->
 <section class="skill-section">
-    <h1 class="heading">Technical Skills</h1>
+    <h1 class="heading">Skills</h1>
     <div class="skills-container">
-        <!-- Skill Cards: HTML, CSS, JS, Python, C, Java -->
-        <!-- Add more skill cards as needed -->
+
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="HTML">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">HTML</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/css.png" class="skill-img" alt="CSS">
+            <div class="skill-level">88%</div>
+            <h1 class="skill-name">CSS</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/js.png" class="skill-img" alt="JavaScript">
+            <div class="skill-level">70%</div>
+            <h1 class="skill-name">JavaScript</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/python.png" class="skill-img" alt="Python">
+            <div class="skill-level">63%</div>
+            <h1 class="skill-name">Python</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/c.png" class="skill-img" alt="C">
+            <div class="skill-level">55%</div>
+            <h1 class="skill-name">C</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/java.png" class="skill-img" alt="Java">
+            <div class="skill-level">61%</div>
+            <h1 class="skill-name">Java</h1>
+        </div>
+
     </div>
 </section>
 
 <!-- Timeline Section -->
 <section class="timeline">
-    <h1 class="heading">Education & Experience</h1>
+    <h1 class="heading">Education and Experience</h1>
+
     <div class="card">
         <div class="card-body">
             <h1 class="card-title">2023 - 2027</h1>
-            <p class="card-detail">B.Tech in CSE at ICFAI Foundation for Higher Education, Hyderabad</p>
+            <p class="card-detail">ICFAI Foundation for Higher Education, Hyderabad<br> B.Tech in Computer Science and Engineering</p>
         </div>
     </div>
+
     <div class="card">
         <div class="card-body">
             <h1 class="card-title">2021 - 2023</h1>
-            <p class="card-detail">Intermediate at Narayana Junior College, Nallagandla</p>
+            <p class="card-detail">Narayana Junior College, Nallagandla<br> Board of Intermediate Education</p>
         </div>
     </div>
+
 </section>
 
 <!-- Contact Section -->
-<section class="contact-section" id="contact">
-    <h1 class="heading">Get in Touch</h1>
+<section class="contact-section">
     <form class="contact-form" id="contactForm">
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <textarea name="msg" id="msg" placeholder="Message" required></textarea>
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" required>
+        <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" required>
+        <textarea name="msg" id="msg" placeholder="Message" autocomplete="off" required></textarea>
         <button type="submit" class="form-submit-btn">Send Message</button>
     </form>
 </section>
 
 <!-- Google Map -->
 <div class="map">
-    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
 <script src="app.js"></script>
