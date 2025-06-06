@@ -1,39 +1,41 @@
-// Select all the navbar links and sections
+// Select all navbar links and corresponding sections
 const links = document.querySelectorAll('.link');
 const sections = document.querySelectorAll('section');
 
-// Track the currently active section index
 let activeLink = 0;
 
-// Function to handle the click event on the links
-links.forEach((link, i) => {
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+    activateSection(0);
+});
+
+// Handle clicks on nav links
+links.forEach((link, index) => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default anchor behavior
+        e.preventDefault();
 
-        // If the clicked link is not the currently active link
-        if (activeLink !== i) {
-            // Remove active class from the previous active link and section
-            links[activeLink].classList.remove('active');
-            sections[activeLink].classList.remove('active');
-
-            // Add active class to the clicked link and corresponding section
-            link.classList.add('active');
-            sections[i].classList.add('active');
-
-            // Update activeLink to the new index
-            activeLink = i;
+        if (activeLink !== index) {
+            activateSection(index);
         }
 
-        // Smooth scrolling to the section (optional)
-        sections[i].scrollIntoView({
+        // Smooth scroll into view
+        sections[index].scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
     });
 });
 
-// Optionally, handle page load to make the first section and link active
-document.addEventListener('DOMContentLoaded', () => {
-    links[0].classList.add('active');
-    sections[0].classList.add('active');
-});
+// Function to activate the selected section and link
+function activateSection(index) {
+    // Remove active class from current
+    links[activeLink].classList.remove('active');
+    sections[activeLink].classList.remove('active');
+
+    // Add active class to new
+    links[index].classList.add('active');
+    sections[index].classList.add('active');
+
+    // Update tracker
+    activeLink = index;
+}
