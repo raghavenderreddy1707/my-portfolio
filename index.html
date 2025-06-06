@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavender's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Projects</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home Section -->
+<section class="home-section active">
+    <h1 class="hero-heading">Hello, I am <br> <span>Raghavender Reddy</span></h1>
+    <img src="img/home.png" class="home-img" alt="Home Image">
+</section>
+
+<!-- Projects Section -->
+<section class="project-section">
+    <h1 class="project-heading">Some of My Projects</h1>
+    <div class="project-container">
+        
+        <div class="project-card">
+            <div class="project-img-container">
+                <img src="img/project-1.png" class="project-img" alt="Alcohol Detection System">
+                <div class="overlay">
+                    <h3>Edit</h3>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">Alcohol Detection System</h1>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">GitHub Repo</button>
+                    <button class="project-btn live">See Live</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-img-container">
+                <img src="img/project-1.png" class="project-img" alt="Portfolio Website">
+                <div class="overlay">
+                    <h3>Edit</h3>
+                </div>
+            </div>
+            <div class="project-content">
+                <h1 class="project-title">Portfolio Website</h1>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">GitHub Repo</button>
+                    <button class="project-btn live">See Live</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more cards similarly -->
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="about">
+        <div class="about-img-container">
+            <img src="img/Raghavender_Reddy_resume-1.png" class="Raghavender_Reddy_resume-1-img" alt="About Image">
+            <button class="download-cv-btn">Download CV</button>
+        </div>
+        <p class="about-info">
+            Passionate Computer Science student with a focus on innovative IoT and Web Development projects. Always learning, always building.
+        </p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skill-section">
+    <h1 class="heading">Skills</h1>
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <img src="img/html.png" class="skill-img" alt="HTML">
+            <div class="skill-level">98%</div>
+            <h1 class="skill-name">HTML</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/css.png" class="skill-img" alt="CSS">
+            <div class="skill-level">88%</div>
+            <h1 class="skill-name">CSS</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/js.png" class="skill-img" alt="JavaScript">
+            <div class="skill-level">70%</div>
+            <h1 class="skill-name">JavaScript</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/python.png" class="skill-img" alt="Python">
+            <div class="skill-level">63%</div>
+            <h1 class="skill-name">Python</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/c.png" class="skill-img" alt="C">
+            <div class="skill-level">55%</div>
+            <h1 class="skill-name">C</h1>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/java.png" class="skill-img" alt="Java">
+            <div class="skill-level">61%</div>
+            <h1 class="skill-name">Java</h1>
+        </div>
+
+        <!-- Add 4 more skill cards similarly -->
+
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="timeline">
+    <h1 class="heading">Education and Experience</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">2023 - 2027</h1>
+            <p class="card-detail">ICFAI Foundation for Higher Education, Hyderabad<br> B.Tech in Computer Science and Engineering</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">2021 - 2023</h1>
+            <p class="card-detail">Narayana Junior College, Nallagandla<br> Board of Intermediate Education</p>
+        </div>
+    </div>
+
+    <!-- Add 4 more cards similarly -->
+
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <form class="contact-form" id="contactForm">
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" required>
+        <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" required>
+        <textarea name="msg" id="msg" placeholder="Message" autocomplete="off" required></textarea>
+        <button type="submit" class="form-submit-btn">Send Message</button>
+    </form>
+</section>
+
+    <!-- Google Map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?... (your map link)" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
