@@ -1,178 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raghavender's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raghavender's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <ul class="link-group">
-        <li class="link active"><a href="#">Home</a></li>
-        <li class="link"><a href="#">Projects</a></li>
-        <li class="link"><a href="#">About</a></li>
-        <li class="link"><a href="#">Contact</a></li>
-    </ul>
+<nav class="navbar" role="navigation" aria-label="Primary Navigation">
+  <div class="logo" aria-label="Logo">Raghavender Reddy</div>
+  <ul class="link-group">
+    <li class="link"><a href="#home" class="active">Home</a></li>
+    <li class="link"><a href="#projects">Projects</a></li>
+    <li class="link"><a href="#about">About</a></li>
+    <li class="link"><a href="#skills">Skills</a></li>
+    <li class="link"><a href="#resume">Resume</a></li>
+    <li class="link"><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<!-- Home Section -->
-<section class="home-section active">
-    <h1 class="hero-heading">Hello, I am <br> <span>Raghavender Reddy</span></h1>
-    <img src="img/home.png" class="home-img" alt="Portfolio banner image">
-</section>
+<main>
 
-<!-- Projects Section -->
-<section class="project-section">
-    <h1 class="project-heading">Some of My Projects</h1>
+  <section class="home-section" id="home" tabindex="-1">
+    <div class="hero-text">
+      <h1 class="hero-heading">Hello, I am <br> <span>Raghavender Reddy</span></h1>
+      <p class="hero-subtext">Motivated Computer Science student passionate about building real-world applications and continuously learning new technologies.</p>
+    </div>
+    <div class="home-img-container">
+      <img src="img/home.png" alt="Portfolio banner image" class="hero-img" />
+    </div>
+  </section>
+
+  <section class="project-section" id="projects" tabindex="-1" aria-label="Projects">
+    <h1 class="section-heading">Some of My Projects</h1>
     <div class="project-container">
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="img/project-1.png" class="project-img" alt="Alcohol Detection System">
-                <div class="overlay">
-                    <h3>Edit</h3>
-                </div>
-            </div>
-            <div class="project-content">
-                <h1 class="project-title">Alcohol Detection System</h1>
-                <div class="project-btn-grp">
-                    <button class="project-btn github">GitHub Repo</button>
-                    <button class="project-btn live">See Live</button>
-                </div>
-            </div>
+      <article class="project-card" tabindex="0">
+        <img src="img/project-1.png" alt="Alcohol Detection System" class="project-img" />
+        <h2 class="project-title">Alcohol Detection System</h2>
+        <div class="project-btn-grp">
+          <a href="#" class="project-btn github" role="button" aria-label="GitHub Repo for Alcohol Detection System">GitHub Repo</a>
+          <a href="#" class="project-btn live" role="button" aria-label="See Live Alcohol Detection System">See Live</a>
         </div>
+      </article>
 
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="img/project-1.png" class="project-img" alt="Portfolio Website">
-                <div class="overlay">
-                    <h3>Edit</h3>
-                </div>
-            </div>
-            <div class="project-content">
-                <h1 class="project-title">Portfolio Website</h1>
-                <div class="project-btn-grp">
-                    <button class="project-btn github">GitHub Repo</button>
-                    <button class="project-btn live">See Live</button>
-                </div>
-            </div>
+      <article class="project-card" tabindex="0">
+        <img src="img/project-1.png" alt="Portfolio Website" class="project-img" />
+        <h2 class="project-title">Portfolio Website</h2>
+        <div class="project-btn-grp">
+          <a href="#" class="project-btn github" role="button" aria-label="GitHub Repo for Portfolio Website">GitHub Repo</a>
+          <a href="#" class="project-btn live" role="button" aria-label="See Live Portfolio Website">See Live</a>
         </div>
-
-        <!-- Additional Project Card Example -->
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="img/project-2.png" class="project-img" alt="Smart Home System">
-                <div class="overlay">
-                    <h3>Edit</h3>
-                </div>
-            </div>
-            <div class="project-content">
-                <h1 class="project-title">Smart Home System</h1>
-                <div class="project-btn-grp">
-                    <button class="project-btn github">GitHub Repo</button>
-                    <button class="project-btn live">See Live</button>
-                </div>
-            </div>
-        </div>
-
+      </article>
     </div>
-</section>
+  </section>
 
-<!-- About Section -->
-<section class="about-section">
-    <div class="about">
-        <div class="about-img-container">
-            <img src="img/Raghavender_Reddy_resume-1.png" class="about-img" alt="Profile image">
-            <button class="download-cv-btn">Download CV</button>
-        </div>
-        <p class="about-info">
-            I am a passionate Computer Science student specializing in IoT and Full Stack Web Development. I enjoy creating impactful solutions and continuously learning emerging technologies.
-        </p>
+  <section class="about-section" id="about" tabindex="-1" aria-label="About Me">
+    <div class="about-img-container">
+      <img src="img/Raghavender_Reddy_resume-1.png" alt="Profile image of Raghavender Reddy" class="about-img" />
+      <a href="RAGHAVENDER_REDDY_resume[2].pdf" download="Raghavender_Reddy_Resume.pdf" class="download-cv-btn" aria-label="Download CV PDF for Raghavender Reddy">
+        Download CV
+      </a>
     </div>
-</section>
+    <div class="about-info">
+      I am a passionate Computer Science student specializing in IoT and Full Stack Web Development. I enjoy creating impactful solutions and continuously learning emerging technologies.
+    </div>
+  </section>
 
-<!-- Skills Section -->
-<section class="skill-section">
-    <h1 class="heading">Skills</h1>
+  <section class="skill-section" id="skills" tabindex="-1" aria-label="Skills">
+    <h1 class="section-heading">Skills</h1>
     <div class="skills-container">
+      <div class="skill-card html-skill" tabindex="0" role="region" aria-label="Skill HTML 98 percent">
+        <img src="img/html.png" alt="HTML logo" class="skill-img" />
+        <div class="skill-level"></div>
+        <h3 class="skill-name">HTML</h3>
+      </div>
+      <div class="skill-card css-skill" tabindex="0" role="region" aria-label="Skill CSS 88 percent">
+        <img src="img/css.png" alt="CSS logo" class="skill-img" />
+        <div class="skill-level"></div>
+        <h3 class="skill-name">CSS</h3>
+      </div>
+      <div class="skill-card js-skill" tabindex="0" role="region" aria-label="Skill JavaScript 70 percent">
+        <img src="img/js.png" alt="JavaScript logo" class="skill-img" />
+        <div class="skill-level"></div>
+        <h3 class="skill-name">JavaScript</h3>
+      </div>
+      <div class="skill-card python-skill" tabindex="0" role="region" aria-label="Skill Python 63 percent">
+        <img src="img/python.png" alt="Python logo" class="skill-img" />
+        <div class="skill-level"></div>
+        <h3 class="skill-name">Python</h3>
+      </div>
+      <div class="skill-card c-skill" tabindex="0" role="region" aria-label="Skill C 55 percent">
+        <img src="img/c.png" alt="C programming logo" class="skill-img" />
+        <div class="skill-level"></div>
+        <h3 class="skill-name">C</h3>
+      </div>
+      <div class="skill-card java-skill" tabindex="0" role="region" aria-label="Skill Java 61 percent">
+        <img src="img/java.png" alt="Java logo" class="skill-img" />
+        <div class="skill-level"></div>
+        <h3 class="skill-name">Java</h3>
+      </div>
+    </div>
+  </section>
 
-        <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="HTML">
-            <div class="skill-level">98%</div>
-            <h1 class="skill-name">HTML</h1>
-        </div>
+  <section class="resume-section" id="resume" tabindex="-1" aria-label="Resume">
+    <h1>Resume</h1>
+    <div class="btn-download-resume">
+      <a href="RAGHAVENDER_REDDY_resume[2].pdf" download="Raghavender_Reddy_Resume.pdf" aria-label="Download full resume PDF">Download Full Resume PDF</a>
+    </div>
+    <div class="resume-cards" role="list">
 
-        <div class="skill-card">
-            <img src="img/css.png" class="skill-img" alt="CSS">
-            <div class="skill-level">88%</div>
-            <h1 class="skill-name">CSS</h1>
-        </div>
+      <article class="resume-card" role="listitem" tabindex="0" aria-label="Education">
+        <h2>Education</h2>
+        <p class="resume-item"><strong>ICFAI Foundation for Higher Education, Hyderabad</strong> (Aug 2023 – Present)<br/>Bachelor of Science in Computer Science and Engineering</p>
+        <p class="resume-item"><strong>Narayana Junior College, Nallagandla</strong> (2021 – 2023)<br/>Board of Intermediate Education, CGPA: 8.8</p>
+      </article>
 
-        <div class="skill-card">
-            <img src="img/js.png" class="skill-img" alt="JavaScript">
-            <div class="skill-level">70%</div>
-            <h1 class="skill-name">JavaScript</h1>
-        </div>
+      <article class="resume-card" role="listitem" tabindex="0" aria-label="Technical Skills">
+        <h2>Technical Skills</h2>
+        <p class="resume-item">Languages & Databases: Python, Java, HTML, JavaScript, MySQL</p>
+        <p class="resume-item">Technical Proficiencies: Data Structures and Algorithms (DSA), Object-Oriented Programming (OOPS)</p>
+      </article>
 
-        <div class="skill-card">
-            <img src="img/python.png" class="skill-img" alt="Python">
-            <div class="skill-level">63%</div>
-            <h1 class="skill-name">Python</h1>
-        </div>
+      <article class="resume-card" role="listitem" tabindex="0" aria-label="Certifications">
+        <h2>Certifications</h2>
+        <p class="resume-item">Microsoft Azure AI Fundamentals - AI-900</p>
+        <p class="resume-item">Data Processing and Visualization - Nasscom</p>
+        <p class="resume-item">Career Essentials in Generative AI - Microsoft and LinkedIn</p>
+        <p class="resume-item">Career Essentials in Data Analysis - Microsoft and LinkedIn</p>
+      </article>
 
-        <div class="skill-card">
-            <img src="img/c.png" class="skill-img" alt="C">
-            <div class="skill-level">55%</div>
-            <h1 class="skill-name">C</h1>
-        </div>
-
-        <div class="skill-card">
-            <img src="img/java.png" class="skill-img" alt="Java">
-            <div class="skill-level">61%</div>
-            <h1 class="skill-name">Java</h1>
-        </div>
+      <article class="resume-card" role="listitem" tabindex="0" aria-label="Extra-Curricular">
+        <h2>Extra-Curricular</h2>
+        <p class="resume-item">Active member of ABC Club; participated in and hosted various events.</p>
+      </article>
 
     </div>
-</section>
+  </section>
 
-<!-- Timeline Section -->
-<section class="timeline">
-    <h1 class="heading">Education and Experience</h1>
-
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title">2023 - 2027</h1>
-            <p class="card-detail">ICFAI Foundation for Higher Education, Hyderabad<br> B.Tech in Computer Science and Engineering</p>
-        </div>
+  <section class="timeline" aria-label="Education Timeline" tabindex="-1">
+    <h1 class="section-heading">Education and Experience</h1>
+    <div class="card" tabindex="0" role="region" aria-label="2023 to 2027 Education">
+      <h2 class="card-title">2023 - 2027</h2>
+      <p class="card-detail">ICFAI Foundation for Higher Education, Hyderabad<br/>B.Tech in Computer Science and Engineering</p>
     </div>
-
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title">2021 - 2023</h1>
-            <p class="card-detail">Narayana Junior College, Nallagandla<br> Board of Intermediate Education</p>
-        </div>
+    <div class="card" tabindex="0" role="region" aria-label="2021 to 2023 Education">
+      <h2 class="card-title">2021 - 2023</h2>
+      <p class="card-detail">Narayana Junior College, Nallagandla<br/>Board of Intermediate Education</p>
     </div>
+  </section>
 
-</section>
-
-<!-- Contact Section -->
-<section class="contact-section">
+  <section class="contact-section" id="contact" tabindex="-1" aria-label="Contact form">
     <form class="contact-form" id="contactForm">
-        <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" required>
-        <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" required>
-        <textarea name="msg" id="msg" placeholder="Message" autocomplete="off" required></textarea>
-        <button type="submit" class="form-submit-btn">Send Message</button>
+      <input type="text" name="name" id="name" autocomplete="off" placeholder="Name" required aria-required="true" />
+      <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" required aria-required="true" />
+      <textarea name="msg" id="msg" placeholder="Message" autocomplete="off" required aria-required="true"></textarea>
+      <button type="submit" class="form-submit-btn">Send Message</button>
     </form>
-</section>
+  </section>
 
-<!-- Google Map -->
-<div class="map">
-    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
+</main>
 
 <script src="app.js"></script>
 </body>
 </html>
+
