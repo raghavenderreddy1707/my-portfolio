@@ -1,41 +1,27 @@
-// Select all navbar links and corresponding sections
-const links = document.querySelectorAll('.link');
-const sections = document.querySelectorAll('section');
+// Smooth section navigation with active link highlight
+const links = document.querySelectorAll('nav ul.link-group a');
+const sections = document.querySelectorAll('main > section');
+let activeIdx = 0;
 
-let activeLink = 0;
-
-// Initialize on DOM load
-document.addEventListener('DOMContentLoaded', () => {
-    activateSection(0);
-});
-
-// Handle clicks on nav links
-links.forEach((link, index) => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        if (activeLink !== index) {
-            activateSection(index);
-        }
-
-        // Smooth scroll into view
-        sections[index].scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-});
-
-// Function to activate the selected section and link
-function activateSection(index) {
-    // Remove active class from current
-    links[activeLink].classList.remove('active');
-    sections[activeLink].classList.remove('active');
-
-    // Add active class to new
-    links[index].classList.add('active');
-    sections[index].classList.add('active');
-
-    // Update tracker
-    activeLink = index;
+function activateLink(index) {
+  links[activeIdx].classList.remove('active');
+  sections[activeIdx].classList.remove('active');
+  links[index].classList.add('active');
+  sections[index].classList.add('active');
+  activeIdx = index;
 }
+
+links.forEach((link, idx) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    sections[idx].scrollIntoView({ behavior: 'smooth' });
+    activateLink(idx);
+  });
+});
+
+// Initialize first section as active on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  sections.forEach((sec, i) => sec.classList.remove('active'));
+  links.forEach(link => link.classList.remove('active'));
+  activateLink(0);
+});
