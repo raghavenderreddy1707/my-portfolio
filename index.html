@@ -2,7 +2,373 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavender Reddy - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Raghavender<strong>Reddy</strong></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <h1 class="hero-title">
+                    Hello, I am<br>
+                    <span class="gradient-text">Raghavender Reddy</span>
+                </h1>
+                <p class="hero-subtitle">Motivated Computer Science student passionate about building real-world applications and continuously learning new technologies.</p>
+                <button class="cta-button" onclick="scrollToSection('projects')">
+                    <span>View My Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-ring"></div>
+                    <img src="/lovable-uploads/3ae5e1b8-6340-4a2e-945b-e9ef0e0e10f2.png" alt="Raghavender Reddy Profile" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element" style="top: 20%; left: 10%;"></div>
+            <div class="floating-element" style="top: 60%; right: 15%;"></div>
+            <div class="floating-element" style="bottom: 20%; left: 20%;"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and passion</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello, I'm a <span class="gradient-text">Computer Science Student</span></h3>
+                    <h4>Full Stack Developer & IoT Enthusiast</h4>
+                    <p>I am a passionate Computer Science student specializing in IoT and Full Stack Web Development. I enjoy creating impactful solutions and continuously learning emerging technologies.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <button class="btn-primary" onclick="downloadCV()">Download CV</button>
+                        <button class="btn-secondary" onclick="scrollToSection('projects')">View Projects</button>
+                    </div>
+                </div>
+                <div class="about-image-section">
+                    <div class="about-img-container">
+                        <img src="/lovable-uploads/3ae5e1b8-6340-4a2e-945b-e9ef0e0e10f2.png" alt="Raghavender Reddy" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Some of My Projects</h2>
+                <p class="section-subtitle">Explore my latest projects and creative solutions</p>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="/api/placeholder/400/300" alt="Alcohol Detection System">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openModal('project1')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="link-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Alcohol Detection System</h3>
+                            <p>IoT-based system for detecting alcohol levels with real-time monitoring capabilities</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Arduino</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="/api/placeholder/400/300" alt="Portfolio Website">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" onclick="openModal('project2')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="link-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Personal portfolio website showcasing projects and skills with modern design</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card html-skill">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                    <div class="skill-level" data-level="98"></div>
+                </div>
+                <div class="skill-card css-skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                    <div class="skill-level" data-level="88"></div>
+                </div>
+                <div class="skill-card js-skill">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                    <div class="skill-level" data-level="70"></div>
+                </div>
+                <div class="skill-card python-skill">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                    <div class="skill-level" data-level="63"></div>
+                </div>
+                <div class="skill-card c-skill">
+                    <i class="fas fa-code"></i>
+                    <span>C</span>
+                    <div class="skill-level" data-level="55"></div>
+                </div>
+                <div class="skill-card java-skill">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                    <div class="skill-level" data-level="61"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">My educational background and experience</p>
+                <button class="btn-primary" onclick="downloadCV()">Download Full Resume PDF</button>
+            </div>
+            <div class="resume-content">
+                <div class="resume-cards">
+                    <div class="resume-card">
+                        <h3>Education</h3>
+                        <div class="resume-item">
+                            <h4>ICFAI Foundation for Higher Education, Hyderabad</h4>
+                            <span class="duration">Aug 2023 – Present</span>
+                            <p>Bachelor of Science in Computer Science and Engineering</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Narayana Junior College, Nallagandla</h4>
+                            <span class="duration">2021 – 2023</span>
+                            <p>Board of Intermediate Education, CGPA: 8.8</p>
+                        </div>
+                    </div>
+                    <div class="resume-card">
+                        <h3>Technical Skills</h3>
+                        <div class="resume-item">
+                            <h4>Languages & Databases</h4>
+                            <p>Python, Java, HTML, JavaScript, MySQL</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Technical Proficiencies</h4>
+                            <p>Data Structures and Algorithms (DSA), Object-Oriented Programming (OOPS)</p>
+                        </div>
+                    </div>
+                    <div class="resume-card">
+                        <h3>Certifications</h3>
+                        <div class="resume-item">
+                            <p>Microsoft Azure AI Fundamentals - AI-900</p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Data Processing and Visualization - Nasscom</p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Career Essentials in Generative AI - Microsoft and LinkedIn</p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Career Essentials in Data Analysis - Microsoft and LinkedIn</p>
+                        </div>
+                    </div>
+                    <div class="resume-card">
+                        <h3>Extra-Curricular</h3>
+                        <div class="resume-item">
+                            <p>Active member of ABC Club; participated in and hosted various events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-section">
+                    <h3>Education Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - 2027</div>
+                            <div class="timeline-content">
+                                <h4>ICFAI Foundation for Higher Education, Hyderabad</h4>
+                                <p>B.Tech in Computer Science and Engineering</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - 2023</div>
+                            <div class="timeline-content">
+                                <h4>Narayana Junior College, Nallagandla</h4>
+                                <p>Board of Intermediate Education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's work together</h2>
+                <h3 class="contact-subtitle">Get in touch</h3>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:raghavender@example.com">raghavender@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <a href="tel:+1234567890">+123 456 7890</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-social">
+                <p>© 2024 - Made with ❤️ by Raghavender Reddy</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Raghavender's Portfolio</title>
   <link rel="stylesheet" href="style.css">
