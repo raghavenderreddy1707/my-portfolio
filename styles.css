@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -200,6 +201,7 @@ body {
     gap: 0.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+    width: fit-content;
 }
 
 .cta-button:hover {
@@ -374,6 +376,10 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn-primary:hover {
@@ -390,6 +396,10 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn-secondary:hover {
@@ -883,6 +893,8 @@ body {
     width: 90%;
     max-width: 600px;
     position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .close {
@@ -1087,6 +1099,10 @@ body {
         width: 250px;
         height: 300px;
         margin: 0 auto;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
 }
 
